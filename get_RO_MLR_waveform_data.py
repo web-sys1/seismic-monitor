@@ -4,11 +4,9 @@ from obspy import read
 #import matplotlib.pyplot as plt   # matplotlib and its pyplot sub-package is used for plotting
 #import numpy as np                # numpy is used for numerical computing and with arrays
 
-
 NIEP_client = Client("NIEP")
 
 t1 = UTCDateTime.now()
-
 start = t1 - 60*60*14
 
 endtime = start + 60*60*14
