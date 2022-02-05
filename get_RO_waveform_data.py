@@ -1,6 +1,10 @@
 from obspy.clients.fdsn import Client
 from obspy import UTCDateTime
 
+import os
+
+os.makedirs('waveforms/RO')
+
 client = Client("NIEP")
 
 t1 = UTCDateTime.now()
