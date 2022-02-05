@@ -21,4 +21,4 @@ wave1.detrend(type='linear')
 wave1.plot(type="dayplot", interval=30, size=(1360, 1060), dpi=164, number_of_ticks=6, tick_rotation=45,
         right_vertical_labels=False,
         vertical_scaling_range=None, one_tick_per_line=True,
-        color=['k', 'r', 'b', 'g'], show_y_UTC_label=False, outfile='public/waveforms/RO/RO_12H_MLR_HHZ.png')
+        color=['k', 'r', 'b', 'g'], show_y_UTC_label=True, outfile='public/waveforms/RO/RO_12H_MLR_HHZ.png')
