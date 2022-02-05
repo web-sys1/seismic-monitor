@@ -42,7 +42,7 @@ jobs:
     
     - name: Proceed adding file
       run: |
-        git add RO_12H_MLR_helicorder.png
+        git add waveforms/RO/RO_12H_MLR_helicorder.png
         
     - name: commit files
       run: |
