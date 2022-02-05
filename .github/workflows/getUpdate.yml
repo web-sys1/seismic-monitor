@@ -38,24 +38,25 @@ jobs:
     - name: Get BMR Data
       run: |
         python get_BMR_waveform_data.py
-
     - name: Get BUR01 Data
       run: |
         python get_BUR01_data.py
-        
     - name: Get BZS data
       run: |
         python get_BZS_waveform_data.py
-        
     - name: Get CJR BHZ data
       run: |
         python get_CJR_BHZ_waveform_data.py
-
     - name: Get CJR HHZ data
       run: |
         python get_CJR_HHZ_waveform_data.py
-        
-    - name: Get MLR Data
+    - name: Get MLR Data in BHZ
+      run: |
+        python get_RO_MLR_BHZ_waveform_data.py
+    - name: Get MLR Data in EHZ
+      run: |
+        python get_RO_MLR_EHZ_waveform_data.py
+    - name: Get MLR Data in HHZ
       run: |
         python get_RO_MLR_waveform_data.py
     
