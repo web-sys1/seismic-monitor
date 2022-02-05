@@ -1,4 +1,4 @@
-# from obspy.clients.fdsn import Client
+from obspy.clients.fdsn import Client
 from obspy import UTCDateTime
 from obspy import read
 #import matplotlib.pyplot as plt   # matplotlib and its pyplot sub-package is used for plotting
