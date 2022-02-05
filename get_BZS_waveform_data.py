@@ -9,8 +9,8 @@ NIEP_client = Client("NIEP")
 
 t1 = UTCDateTime.now()
 
-start = t1 - 60*60*14
-endtime = start + 60*60*14
+start = t1 - 60*60*12
+endtime = start + 60*60*12
 
 try:
  wave1 = NIEP_client.get_waveforms('RO', 'BZS', '--', 'HHZ', start.replace(minute=0, second=1), endtime)
@@ -22,6 +22,6 @@ try:
         right_vertical_labels=False,
         vertical_scaling_range=None, one_tick_per_line=True,
         color=['k', 'r', 'b', 'g'], show_y_UTC_label=True,
-        outfile='RO_12H_MLR_helicorder.png')
+        outfile='public/waveforms/RO/RO_12H_BZS_HHZ.png')
 except Exception as e:
  print('Error while fetching: ', e)
