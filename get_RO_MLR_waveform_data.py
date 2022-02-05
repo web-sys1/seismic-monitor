@@ -7,9 +7,9 @@ from obspy import read
 NIEP_client = Client("NIEP")
 
 t1 = UTCDateTime.now()
-start = t1 - 60*60*14
 
-endtime = start + 60*60*14
+start = t1 - 60*60*12
+endtime = start + 60*60*12
 
 wave1 = NIEP_client.get_waveforms('RO', 'MLR', '--', 'HHZ', start.replace(minute=0, second=1), endtime)
 #wave1.filter('lowpass', freq=1.1, corners=2, zerophase=False)
