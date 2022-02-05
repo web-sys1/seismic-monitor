@@ -35,14 +35,17 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
         
-              
-    - name: Process Data
+    - name: Get BUR01 Data
       run: |
-        python get_RO_waveform_data.py
+        python get_BUR01_data.py
+        
+    - name: Get MLR Data
+      run: |
+        python get_RO_MLR_waveform_data.py
     
     - name: Proceed adding file
       run: |
-        git add waveforms/RO/RO_12H_MLR_helicorder.png
+        git add .
         
     - name: commit files
       run: |
