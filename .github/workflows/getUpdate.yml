@@ -43,6 +43,9 @@ jobs:
       run: |
         python get_BUR01_data.py
         
+    - name: Get BZS data
+      run: |
+        python get_BZS_waveform_data.py
     - name: Get MLR Data
       run: |
         python get_RO_MLR_waveform_data.py
