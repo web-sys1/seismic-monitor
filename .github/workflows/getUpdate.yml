@@ -40,9 +40,9 @@ jobs:
       run: |
         python get_RO_waveform_data.py
     
-    #- name: Proceed adding file
-    # run: |
-    #   git add index.html
+    - name: Proceed adding file
+      run: |
+        git add RO_12H_MLR_helicorder.png
         
     - name: commit files
       run: |
