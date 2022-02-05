@@ -43,9 +43,9 @@ jobs:
       run: |
         python get_RO_MLR_waveform_data.py
     
-    - name: Proceed adding file
-      run: |
-        git add .
+    #- name: Proceed adding file
+    #  run: |
+    #    git add .
         
     - name: commit files
       run: |
