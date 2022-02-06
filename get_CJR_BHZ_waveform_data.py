@@ -22,6 +22,6 @@ try:
         right_vertical_labels=False,
         vertical_scaling_range=5e3, one_tick_per_line=True,
         color=['k', 'r', 'b', 'g'], show_y_UTC_label=True,
-        outfile='RO_12H_MLR_HHZ.png')
+        outfile='public/waveforms/RO/RO_12H_CJR_BHZ.png')
 except Exception as e:
  print('Error while fetching: ', e)
