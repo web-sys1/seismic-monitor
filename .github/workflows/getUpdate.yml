@@ -50,6 +50,12 @@ jobs:
     - name: Get CJR HHZ data
       run: |
         python get_CJR_HHZ_waveform_data.py
+    - name: Get IASR Data in BHZ
+      run: |
+        python get_RO_IASR_BHZ_waveform_data.py
+    - name: Get IASR Data in HHZ
+      run: |
+        python get_RO_IASR_HHZ_waveform_data.py
     - name: Get MLR Data in BHZ
       run: |
         python get_RO_MLR_BHZ_waveform_data.py
