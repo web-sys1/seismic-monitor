@@ -74,7 +74,9 @@ jobs:
     - name: Get MLR Data in HHZ
       run: |
         python get_RO_MLR_waveform_data.py
-    
+    - name: Get VRI data in HHZ
+      run: |
+        python get_RO_VRI_HHZ_data.py
     #- name: Proceed adding file
     #  run: |
     #    git add .
