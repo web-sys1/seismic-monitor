@@ -12,9 +12,9 @@ t1 = UTCDateTime.now()
 start = t1 - 60*60*12
 endtime = start + 60*60*12
 
-
 wave1 = NIEP_client.get_waveforms('RO', 'BUR01', '--', 'HNZ', start.replace(minute=0, second=1), endtime)
-wave1.filter("bandpass", freqmin=0.22, freqmax=25.00, corners=3, zerophase=False)
+wave1.filter('highpass', freq=0.62, corners=1, zerophase=True)
+#wave1.filter("bandpass", freqmin=0.62, freqmax=25.00, corners=3, zerophase=False)
 wave1.detrend(type='demean')
 wave1.detrend(type='linear')
 wave1.plot(type='dayplot', interval=60, right_vertical_labels=True,
