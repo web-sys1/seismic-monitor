@@ -42,9 +42,9 @@ jobs:
     - name: Get BANR Data in HHZ
       run: |
         python get_BANR_HHZ_waveform_data.py
-    - name: Get BZS data
-      run: |
-        python get_BZS_waveform_data.py        
+    #- name: Get BZS data
+    #  run: |
+    #    python get_BZS_waveform_data.py        
     - name: Get BMR Data
       run: |
         python get_BMR_waveform_data.py
