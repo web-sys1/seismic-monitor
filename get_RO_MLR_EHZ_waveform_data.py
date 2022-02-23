@@ -13,11 +13,11 @@ start = t1 - 60*60*12
 endtime = start + 60*60*12
 
 wave1 = NIEP_client.get_waveforms('RO', 'MLR', '--', 'EHZ', start.replace(minute=0, second=1), endtime)
-wave1.filter('highpass', freq=0.22, corners=1, zerophase=True)
+wave1.filter('highpass', freq=0.42, corners=1, zerophase=True)
 #wave1.filter("bandpass", freqmin=0.09, freqmax=13.00, corners=2, zerophase=False)
 wave1.detrend(type='demean')
 wave1.detrend(type='linear')
 wave1.plot(type="dayplot", interval=30, size=(1360, 1060), dpi=170, number_of_ticks=6, tick_rotation=45,
         right_vertical_labels=False,
-        vertical_scaling_range=5e1, one_tick_per_line=True,
+        vertical_scaling_range=5e1+2e1, one_tick_per_line=True,
         color=['k', 'r', 'b', 'g'], show_y_UTC_label=True, outfile='public/waveforms/RO/RO_12H_MLR_EHZ.png')
