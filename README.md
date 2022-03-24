@@ -1,2 +1,2 @@
 # Real time Seismic Monitor
-Monitoring real time waveforms in Romania
+Monitoring real time waveforms in Romania.
