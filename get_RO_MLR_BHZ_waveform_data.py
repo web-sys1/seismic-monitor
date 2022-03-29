@@ -13,7 +13,7 @@ start = t1 - 60*60*12
 endtime = start + 60*60*12
 
 wave1 = NIEP_client.get_waveforms('RO', 'MLR', '--', 'BHZ', start.replace(minute=0, second=1), endtime)
-wave1.filter('highpass', freq=0.12, corners=2, zerophase=False)
+wave1.filter('highpass', freq=1, corners=2, zerophase=False)
 #wave1.filter("bandpass", freqmin=0.09, freqmax=25.00, corners=2, zerophase=False)
 wave1.detrend(type='demean')
 wave1.detrend(type='linear')
