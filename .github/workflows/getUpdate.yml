@@ -48,7 +48,7 @@ jobs:
     - name: Get BMR Data
       run: |
         python get_BMR_waveform_data.py
-    #- name: Get BUR01 Data ()
+    #- name: Get BUR01 Data () |
     #  run: |
     #    python get_BUR01_data.py
     - name: Get BZS data
